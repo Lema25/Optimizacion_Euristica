@@ -23,10 +23,10 @@ cities = {
     'Cúcuta': (3, 9)
 }
 
-# Calcular la matriz de distancias entre ciudades
+# Calculamos la matriz de distancias entre ciudades
 dist_matrix = distance_matrix(list(cities.values()), list(cities.values()))
 
-# Algoritmo genético para encontrar la mejor ruta
+# Algoritmo genético que encuentra la mejor ruta
 def genetic_algorithm(num_generations, population_size, crossover_rate, mutation_rate):
     num_cities = len(cities)
     population = np.array([np.random.permutation(num_cities) for _ in range(population_size)])
@@ -51,7 +51,7 @@ def genetic_algorithm(num_generations, population_size, crossover_rate, mutation
     best_route = population[0]
     return best_route
 
-# Función de costo (a ajustar según los costos reales)
+# Función de costo !Tenemos que ajustar según los costos reales!!!!!!
 def calculate_fitness(route):
     total_distance = sum(dist_matrix[route[i], route[i + 1]] for i in range(len(route) - 1))
     return total_distance
