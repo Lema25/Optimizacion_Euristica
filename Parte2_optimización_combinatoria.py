@@ -4,7 +4,7 @@ from scipy.spatial import distance_matrix
 from itertools import permutations
 from matplotlib.animation import FuncAnimation
 
-# Definimos las ciudades y sus coordenadas en el mapa 
+# Definimos las ciudades y sus coordenadas en el mapa TEMPORAL!!!!!
 cities = {
     'Palmira': (3, 2),
     'Pasto': (4, 5),
