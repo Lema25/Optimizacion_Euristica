@@ -229,3 +229,8 @@ evolutionary_algorithm_animation()
 particle_optimization_animation()
 
 plt.show()
+
+
+# Discuta ¿Qué aportaron los métodos de descenso por gradiente y qué aportaron los métodos heurísticos? 
+# Para responder a esta pregunta considere el valor final de la función objetivo y el número de evaluaciones 
+# de la función objetivo. Para responder a esta pregunta es posible que se requiera hacer varias corridas de los algoritmos.
